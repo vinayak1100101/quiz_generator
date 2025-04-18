@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Quiz Result</title>
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+</head>
+<body>
+  <div class="container">
+    <h1 class="mt-5">Quiz Completed!</h1>
+    <p>Thank you, {{ username }}, for taking the quiz.</p>
+    <p>Your final score: <strong>{{ score }}</strong></p>
+    <a href="{% url 'home' %}" class="btn btn-primary">Try Again</a>
+  </div>
+</body>
+</html>
